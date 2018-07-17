@@ -31,6 +31,14 @@ Use the following commands to set environment variables. Modify if necessary.
 
 _**TO DO:**_ _Fix instructions_
 
+## Dialing instructions
+
+You can dial any number at the appliance to reach your DFE agent. To test and verify your audio, dial `sip:test@{svc ip}`.
+You should hear test audio: "Hello, world. Hello, world."
+
+## Monitoring the appliance
+The appliance reports usage every five minutes.
+
 ## Backups
 The Gateway appliance does not store any long-term data. Backups are not necessary.
 
@@ -41,8 +49,7 @@ There is no upgrade path. It is recommended you stand up a new appliance and tra
 
 To troubleshoot errors, refer to the container logs for the deployed application. Some common errors:
 
-- ** No API access**  
-There are two possible reasons:
+- No API access. There are two possible reasons:
  - The cluster does not have cloud scope
  - The API is not activated
 
