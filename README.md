@@ -5,31 +5,44 @@ The USAN Dialogflow Enterprise Telephony Gateway provides media server functiona
 ## Prerequisites
 Before you begin using the USAN Dialogflow Enterprise Telephony Gateway, you must:
 
-* Set up a Kubernetes cluster that has appropriate permissions and cloud scope
-* Set up kubectl
-* Install application resource
-* Acquire a license
-* Enable the Google Dialogflow API
-* Configure an agent to run at Dialogflow
+* Install the Google Cloud SDK:
+  * https://cloud.google.com/sdk/install
 
-## Using command-line instructions
-Use the following commands to set environment variables. Modify if necessary.
 
-    export APP_INSTANCE_NAME=dialogflow-entperise-telephony-gateway-1
-    export NAMESPACE=default
-    export IMAGE_GATEWAY=launcher.gcr.io/usan-public-209020/dialogflow-entperise-telephony-gateway:1
-    export IMAGE_INIT=launcher.gcr.io/usan-public-209020/dialogflow-entperise-telephony-gateway/init:1
-    export IMAGE_UBBAGENT=launcher.gcr.io/google/ubbagent  
+* Set up authentication for Production Applications:
+  * https://cloud.google.com/docs/authentication/production
 
-### Expand manifest template:
+## Installing the USAN Dialogflow Enterprise Telephony Gateway
+1. Use the following commands to create the cluster.
+        export CLUSTER="<YOUR_CLUSTER_NAME>"
+        export ZONE="<GCLOUD_PROJECT_ZONE>"
+        gcloud container clusters create "$CLUSTER" --zone "$ZONE"
 
-    cat manifest/* | envsubst > expanded.yaml
 
-### Run kubectl:
+2. Get credentials for the cluster and kubectl.
 
-    kubectl apply -f expanded.yaml
+    **Cluster**
+       gcloud container clusters get-credentials "$CLUSTER" --zone "$ZONE"
 
-_**TO DO:**_ _Fix instructions_
+    **kubectl**
+       kubectl create clusterrolebinding cluster-admin-binding   --clusterrole cluster-admin --user $(gcloud config get-value account)
+
+3. Navigate to the root of the cloned git repository.
+4. Install Application CRD.
+        make crd/install
+5. Export variables.
+        export name=dialogflow-telephony-bridge-1
+        export namespace=default
+    _see note below_
+        export imageUbbagent=gcr.io/<TBD>:latest
+        export imageInit=gcr.io/<TBD>:latest
+        export imageTelephonyBridge=gcr.io/<TBD>:latest
+
+6. Create the combined yaml.
+        cat manifest/* | envsubst > expanded.yaml
+
+7. Install.
+        kubectl apply -f expanded.yaml
 
 ## Dialing instructions
 
@@ -55,4 +68,4 @@ To troubleshoot errors, refer to the container logs for the deployed application
 
 Note that launching the application in a VPC is not supported.
 
-_**TO DO:**_ _Add error definitions_
+_**TO DO:**_ _Add error definitions; add security config info_
