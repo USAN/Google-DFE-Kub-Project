@@ -24,14 +24,14 @@ Before you begin using the USAN Dialogflow Enterprise Telephony Gateway, you mus
 
   **Cluster**
 
-            gcloud container clusters get-credentials "$CLUSTER" --zone "$ZONE"
+        gcloud container clusters get-credentials "$CLUSTER" --zone "$ZONE"
 
     **kubectl**
-            kubectl create clusterrolebinding cluster-admin-binding   --clusterrole cluster-admin --user $(gcloud config get-value account)
+        kubectl create clusterrolebinding cluster-admin-binding   --clusterrole cluster-admin --user $(gcloud config get-value account)
 
 3. Navigate to the root of the cloned git repository.
 4. Install Application CRD.
-              make crd/install
+        make crd/install
 5. Export variables.
               export name=dialogflow-telephony-bridge-1
               export namespace=default
