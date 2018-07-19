@@ -14,35 +14,36 @@ Before you begin using the USAN Dialogflow Enterprise Telephony Gateway, you mus
 
 ## Installing the USAN Dialogflow Enterprise Telephony Gateway
 1. Use the following commands to create the cluster.
-            export CLUSTER="<YOUR_CLUSTER_NAME>"
-            export ZONE="<GCLOUD_PROJECT_ZONE>"
-            gcloud container clusters create "$CLUSTER" --zone "$ZONE" --machine-type n1-standard-1 --num-nodes 2 --scopes=cloud-platform,gke-default
+
+        export CLUSTER="<YOUR_CLUSTER_NAME>"
+        export ZONE="<GCLOUD_PROJECT_ZONE>"
+        gcloud container clusters create "$CLUSTER" --zone "$ZONE" --machine-type n1-standard-1 --num-nodes 2 --scopes=cloud-platform,gke-default
 
 
 2. Get credentials for the cluster and kubectl.
 
-    **Cluster**
-           gcloud container clusters get-credentials "$CLUSTER" --zone "$ZONE"
+  **Cluster**
+
+            gcloud container clusters get-credentials "$CLUSTER" --zone "$ZONE"
 
     **kubectl**
-           kubectl create clusterrolebinding cluster-admin-binding   --clusterrole cluster-admin --user $(gcloud config get-value account)
+            kubectl create clusterrolebinding cluster-admin-binding   --clusterrole cluster-admin --user $(gcloud config get-value account)
 
 3. Navigate to the root of the cloned git repository.
 4. Install Application CRD.
-            make crd/install
+              make crd/install
 5. Export variables.
-            export name=dialogflow-telephony-bridge-1
-            export namespace=default
-        _see note below_
-            export imageUbbagent=gcr.io/<TBD>:latest
-            export imageInit=gcr.io/<TBD>:latest
-            export imageTelephonyBridge=gcr.io/<TBD>:latest
+              export name=dialogflow-telephony-bridge-1
+              export namespace=default
+              export imageUbbagent=gcr.io/<TBD>:latest
+              export imageInit=gcr.io/<TBD>:latest
+              export imageTelephonyBridge=gcr.io/<TBD>:latest
 
 6. Create the combined yaml.
-            cat manifest/* | envsubst > expanded.yaml
+              cat manifest/* | envsubst > expanded.yaml
 
 7. Install.
-            kubectl apply -f expanded.yaml
+              kubectl apply -f expanded.yaml
 
 ## Dialing instructions
 
