@@ -74,6 +74,6 @@ To troubleshoot errors, refer to the container logs for the deployed application
  - The cluster does not have cloud scope
  - The API is not activated
 
-Note that launching the application in a VPC is not supported.
+Note: that launching the application in a VPC is not supported.
 
 _**TO DO:**_ _Add error definitions; add security config info_
