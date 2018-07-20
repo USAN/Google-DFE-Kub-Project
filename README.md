@@ -22,28 +22,34 @@ Before you begin using the USAN Dialogflow Enterprise Telephony Gateway, you mus
 
 2. Get credentials for the cluster and kubectl.
 
-  **Cluster**
+**Cluster**
 
         gcloud container clusters get-credentials "$CLUSTER" --zone "$ZONE"
 
-    **kubectl**
+**kubectl**
+
         kubectl create clusterrolebinding cluster-admin-binding   --clusterrole cluster-admin --user $(gcloud config get-value account)
 
 3. Navigate to the root of the cloned git repository.
+
 4. Install Application CRD.
         make crd/install
+
 5. Export variables.
-              export name=dialogflow-telephony-bridge-1
-              export namespace=default
-              export imageUbbagent=gcr.io/<TBD>:latest
-              export imageInit=gcr.io/<TBD>:latest
-              export imageTelephonyBridge=gcr.io/<TBD>:latest
+
+        export name=dialogflow-telephony-bridge-1
+        export namespace=default
+        export imageUbbagent=gcr.io/<TBD>:latest
+        export imageInit=gcr.io/<TBD>:latest
+        export imageTelephonyBridge=gcr.io/<TBD>:latest
 
 6. Create the combined yaml.
-              cat manifest/* | envsubst > expanded.yaml
+
+        cat manifest/* | envsubst > expanded.yaml
 
 7. Install.
-              kubectl apply -f expanded.yaml
+
+        kubectl apply -f expanded.yaml
 
 ## Dialing instructions
 
@@ -52,6 +58,7 @@ You should hear test audio: "Hello, world. Hello, world."
 
 ## Monitoring the appliance
 The appliance reports usage every five minutes.
+
 
 ## Backups
 The Gateway appliance does not store any long-term data. Backups are not necessary.
@@ -67,6 +74,6 @@ To troubleshoot errors, refer to the container logs for the deployed application
  - The cluster does not have cloud scope
  - The API is not activated
 
-Note that launching the application in a VPC is not supported.
+Note: that launching the application in a VPC is not supported.
 
 _**TO DO:**_ _Add error definitions; add security config info_
