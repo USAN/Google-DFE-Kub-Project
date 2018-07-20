@@ -59,6 +59,7 @@ You should hear test audio: "Hello, world. Hello, world."
 ## Monitoring the appliance
 The appliance reports usage every five minutes.
 
+
 ## Backups
 The Gateway appliance does not store any long-term data. Backups are not necessary.
 
