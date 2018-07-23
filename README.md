@@ -65,7 +65,7 @@ The appliance reports usage every five minutes.
 The Gateway appliance does not store any long-term data. Backups are not necessary.
 
 ## Upgrades
-There is no upgrade path. It is recommended you stand up a new appliance and transition your traffic to that new appliance.
+There is no upgrade path. It is recommended you stand up a new appliance and transition your traffic to the new appliance.
 
 ## Troubleshooting
 
