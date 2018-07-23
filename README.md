@@ -33,6 +33,7 @@ Before you begin using the USAN Dialogflow Enterprise Telephony Gateway, you mus
 3. Navigate to the root of the cloned git repository.
 
 4. Install Application CRD.
+
         make crd/install
 
 5. Export variables.
@@ -64,7 +65,7 @@ The appliance reports usage every five minutes.
 The Gateway appliance does not store any long-term data. Backups are not necessary.
 
 ## Upgrades
-There is no upgrade path. It is recommended you stand up a new appliance and transition your traffic to that new appliance.
+There is no upgrade path. It is recommended you stand up a new appliance and transition your traffic to the new appliance.
 
 ## Troubleshooting
 
@@ -74,6 +75,6 @@ To troubleshoot errors, refer to the container logs for the deployed application
  - The cluster does not have cloud scope
  - The API is not activated
 
-Note: that launching the application in a VPC is not supported.
+_Note:_ Launching the application in a VPC is not supported.
 
 _**TO DO:**_ _Add error definitions; add security config info_
