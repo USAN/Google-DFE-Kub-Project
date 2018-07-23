@@ -2,6 +2,8 @@
 
 The USAN Dialogflow Enterprise Telephony Gateway provides media server functionality and enterprise telephony (SIP) connectivity between Google Dialogflow Enterprise and your company's enterprise telephony components (PBX or SBC).
 
+Today, you can install and use a free developer edition, which is limited to two concurrent calls. Please check the Marketplace in the near future for the full-capacity production version.
+
 ## Prerequisites
 Before you begin using the USAN Dialogflow Enterprise Telephony Gateway, you must:
 
@@ -76,5 +78,3 @@ To troubleshoot errors, refer to the container logs for the deployed application
  - The API is not activated
 
 _Note:_ Launching the application in a VPC is not supported.
-
-_**TO DO:**_ _Add error definitions; add security config info_
