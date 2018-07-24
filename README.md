@@ -85,7 +85,7 @@ There is no upgrade path. It is recommended you stand up a new appliance and tra
 To troubleshoot errors, refer to the container logs for the deployed application. Some common errors:
 
 - No API access. There are two possible reasons:
- - The cluster does not have cloud scope
- - The API is not activated
+  - The cluster does not have cloud scope
+  - The API is not activated
 
 _Note:_ Launching the application in a VPC is not supported.
