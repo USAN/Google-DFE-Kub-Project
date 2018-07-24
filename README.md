@@ -14,6 +14,15 @@ Before you begin using the USAN Dialogflow Enterprise Telephony Gateway, you mus
 * Set up authentication for Production Applications:
   * https://cloud.google.com/docs/authentication/production
 
+
+* Create a new Google Cloud Platform project:
+  * https://cloud.google.com/resource-manager/docs/creating-managing-projects
+
+
+* Set up Dialogflow:
+  * https://dialogflow.com/docs/getting-started
+
+
 ## Installing the USAN Dialogflow Enterprise Telephony Gateway
 1. Use the following commands to create the cluster.
 
@@ -54,6 +63,9 @@ Before you begin using the USAN Dialogflow Enterprise Telephony Gateway, you mus
 
         kubectl apply -f expanded.yaml
 
+8. Follow the post-installation instructions that are displayed in the application panel.
+
+
 ## Dialing instructions
 
 You can dial any number at the appliance to reach your DFE agent. To test and verify your audio, dial `sip:test@{svc ip}`.
@@ -61,7 +73,6 @@ You should hear test audio: "Hello, world. Hello, world."
 
 ## Monitoring the appliance
 The appliance reports usage every five minutes.
-
 
 ## Backups
 The Gateway appliance does not store any long-term data. Backups are not necessary.
