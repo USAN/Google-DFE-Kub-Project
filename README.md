@@ -51,9 +51,8 @@ Before you begin using the USAN Dialogflow Enterprise Telephony Gateway, you mus
 
         export name=dialogflow-telephony-bridge-1
         export namespace=default
-        export imageUbbagent=gcr.io/<TBD>:latest
-        export imageInit=gcr.io/<TBD>:latest
-        export imageTelephonyBridge=gcr.io/<TBD>:latest
+        export imageTelephonyBridge=gcr.io/usan-gcp/dialogflow-entperise-telephony-gateway:1
+        
 
 6. Create the combined yaml.
 
@@ -85,7 +84,7 @@ There is no upgrade path. It is recommended you stand up a new appliance and tra
 To troubleshoot errors, refer to the container logs for the deployed application. Some common errors:
 
 - No API access. There are two possible reasons:
- - The cluster does not have cloud scope
- - The API is not activated
+  - The cluster does not have cloud scope
+  - The API is not activated
 
 _Note:_ Launching the application in a VPC is not supported.
