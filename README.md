@@ -51,8 +51,8 @@ Before you begin using the USAN Dialogflow Enterprise Telephony Gateway, you mus
 
         export name=dialogflow-telephony-bridge-1
         export namespace=default
-        export imageTelephonyBridge=gcr.io/usan-gcp/dialogflow-entperise-telephony-gateway:1
-        
+        export imageTelephonyBridge=marketplace.gcr.io/usan-gcp/u-dfe-tg:1
+
 
 6. Create the combined yaml.
 
