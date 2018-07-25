@@ -22,8 +22,14 @@ Before you begin using the USAN Dialogflow Enterprise Telephony Gateway, you mus
 * Set up Dialogflow:
   * https://dialogflow.com/docs/getting-started
 
-
 ## Installing the USAN Dialogflow Enterprise Telephony Gateway
+This two-minute video walks you through the initial steps of installing the USAN Dialogflow Enterprise Telephony Gateway.
+
+[![Installing the USAN Dialogflow Enterprise Telephony Gateway](http://img.youtube.com/vi/Z--sN2gD9ng/0.jpg)](http://www.youtube.com/watch?v=Z--sN2gD9ng "Installing the USAN Dialogflow Enterprise Telephony Gateway")
+
+## Using the command line to install the USAN Dialogflow Enterprise Telephony Gateway
+You can also install the USAN Dialogflow Enterprise Telephony Gateway from the command line.
+
 1. Use the following commands to create the cluster.
 
         export CLUSTER="<YOUR_CLUSTER_NAME>"
