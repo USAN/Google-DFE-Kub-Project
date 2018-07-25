@@ -1,11 +1,11 @@
-# USAN Enterprise Telephony Gateway
+# USAN Dialogflow Telephony Bridge
 
-The USAN Dialogflow Enterprise Telephony Gateway provides media server functionality and enterprise telephony (SIP) connectivity between Google Dialogflow Enterprise and your company's enterprise telephony components (PBX or SBC).
+The USAN Dialogflow Telephony Bridge provides media server functionality and enterprise telephony (SIP) connectivity between Google Dialogflow Enterprise and your company's enterprise telephony components (PBX or SBC).
 
 Today, you can install and use a free developer edition, which is limited to two concurrent calls. Please check the Marketplace in the near future for the full-capacity production version.
 
 ## Prerequisites
-Before you begin using the USAN Dialogflow Enterprise Telephony Gateway, you must:
+Before you begin using the USAN Dialogflow Telephony Bridge, you must:
 
 * Install the Google Cloud SDK:
   * https://cloud.google.com/sdk/install
@@ -22,13 +22,13 @@ Before you begin using the USAN Dialogflow Enterprise Telephony Gateway, you mus
 * Set up Dialogflow:
   * https://dialogflow.com/docs/getting-started
 
-## Installing the USAN Dialogflow Enterprise Telephony Gateway
-This two-minute video walks you through the initial steps of installing the USAN Dialogflow Enterprise Telephony Gateway.
+## Installing the USAN Dialogflow Telephony Bridge
+This two-minute video walks you through the initial steps of installing the USAN Dialogflow Telephony Bridge:
 
-[![Installing the USAN Dialogflow Enterprise Telephony Gateway](http://img.youtube.com/vi/Z--sN2gD9ng/0.jpg)](http://www.youtube.com/watch?v=Z--sN2gD9ng "Installing the USAN Dialogflow Enterprise Telephony Gateway")
+[![Installing the USAN Dialogflow Enterprise Telephony Gateway](https://i.imgur.com/6jP9ahA.jpg)](http://www.youtube.com/watch?v=Z--sN2gD9ng "Installing the USAN Dialogflow Enterprise Telephony Gateway")
 
-## Using the command line to install the USAN Dialogflow Enterprise Telephony Gateway
-You can also install the USAN Dialogflow Enterprise Telephony Gateway from the command line.
+## Using the command line to install the USAN Dialogflow Telephony Bridge
+You can also install the USAN Dialogflow Telephony Bridge from the command line.
 
 1. Use the following commands to create the cluster.
 
