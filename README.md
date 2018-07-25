@@ -25,7 +25,7 @@ Before you begin using the USAN Dialogflow Enterprise Telephony Gateway, you mus
 ## Installing the USAN Dialogflow Enterprise Telephony Gateway
 This two-minute video walks you through the initial steps of installing the USAN Dialogflow Enterprise Telephony Gateway.
 
-[![Installing the USAN Dialogflow Enterprise Telephony Gateway](http://img.youtube.com/vi/Z--sN2gD9ng/0.jpg)](http://www.youtube.com/watch?v=Z--sN2gD9ng "Installing the USAN Dialogflow Enterprise Telephony Gateway")
+[![Installing the USAN Dialogflow Enterprise Telephony Gateway](https://i.imgur.com/6jP9ahA.jpg)](http://www.youtube.com/watch?v=Z--sN2gD9ng "Installing the USAN Dialogflow Enterprise Telephony Gateway")
 
 ## Using the command line to install the USAN Dialogflow Enterprise Telephony Gateway
 You can also install the USAN Dialogflow Enterprise Telephony Gateway from the command line.
