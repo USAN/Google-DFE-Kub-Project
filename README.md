@@ -1,8 +1,6 @@
-# USAN Dialogflow Enterprise Telephony Gateway (Developer Edition)
+# USAN Dialogflow Enterprise Telephony Gateway
 
-The USAN Dialogflow Enterprise Telephony Gateway (Developer Edition) provides media server functionality and enterprise telephony (SIP) connectivity between Google Dialogflow Enterprise and your company's enterprise telephony components (PBX or SBC).
-
-Today, you can install and use a free developer edition, which is limited to two concurrent calls. Please check the Marketplace in the near future for the full-capacity production version.
+The USAN Dialogflow Enterprise Telephony Gateway allows Google Dialogflow Enterprise Edition users to easily connect to their projects from existing phone numbers and enterprise telephony networks. The solution connects to corporate PBXs and SBCs via SIP/RTP and provides a bridging gateway function into the Google Dialogflow Enterprise voice API. The solution provides the necessary services to provide optional voice activity detection and audio end-pointing before sending audio to Google Dialog Flow for speech recognition, forwarding the voice utterances to Dialogflow Enterprise, enabling Google WaveNet text-to-speech from Google DialogFlow Enterprise to the RTP stream, and managing the call transfers back to the Corporate Telephony network via SIP. This edition supports 49 concurrent sessions per deployed gateway. More sessions per gateway are possible if custom GCP firewall configurations are created – contact USAN for information on how.
 
 ## Prerequisites
 Before you begin using the USAN Dialogflow Enterprise Telephony Gateway, you must:
